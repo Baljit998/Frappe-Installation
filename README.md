@@ -20,6 +20,8 @@ After creating a new username and password, run
 Followed by
 
     sudo apt-get upgrade
+
+Alternatively you can also follow the below steps to install frappe on Ubuntu only.
       
 <h3><b> Step 2: Install Frappe Pre-requisites </b></h3>
 
