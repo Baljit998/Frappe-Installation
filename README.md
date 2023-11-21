@@ -21,7 +21,14 @@ Followed by
 
     sudo apt-get upgrade
 
-Alternatively you can also follow the below steps to install frappe on Ubuntu only.
+#### Alternatively you can also follow the below steps to install frappe on Ubuntu Server or Desktop also.
+
+Create user. Note: Replace [frappe-user] with your username. Eg. sudo adduser myname
+
+    sudo adduser [frappe-user]
+    usermod -aG sudo [frappe-user]
+    su [frappe-user] 
+    cd /home/[frappe-user]/
       
 <h3><b> Step 2: Install Frappe Pre-requisites </b></h3>
 
@@ -32,6 +39,11 @@ We need to install the following prerequisite packages for Frappe V15
     MariaDB 10.6.6+        cron
     Redis 6                NGINX
     wkhtmltopdf (version 0.12.6 with patched qt)
+
+#### Install Git
+Use command
+
+    sudo apt-get install git
 
 #### Python 3.10 & pip 20+
 Use the following command to install the latest version of python 3
@@ -148,4 +160,4 @@ Alternatively, you can just start the bench and serve the site on a different po
 
     bench --site site.local serve --port 8069
 
-These are the steps to install frappe version 15.
+These are the steps to install frappe version 15. Visit https://github.com/gavindsouza/awesome-frappe to learn about other apps you can install.
